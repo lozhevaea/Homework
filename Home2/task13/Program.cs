@@ -30,20 +30,22 @@ result = n / b % 10;
 System.Console.WriteLine(result);
 }
 
-// //Решение задачи с помощью цикла for
-// //При запуске не работает цикл. Не могу понять почему.
+
+//Решение задачи с помощью цикла for
 
 // if (a < 3)
 // {
 //     Console.Write("Третьей цифры нет. ");
 // }
-// else for (int i = 0; i < a; i++)
+// else 
+// {
+// for (int i = a; i > 3; i--)
 // {
 //     b = b * 10;
 // }
-// result = n / b * 1000 % 10;
+// result = n / b % 10;
 // System.Console.WriteLine(result);
-
+// }
 
 
 // Решение задачи через строковую переменную
