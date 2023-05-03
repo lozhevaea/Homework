@@ -10,6 +10,10 @@ int n = Convert.ToInt32(Console.ReadLine());
 int a = n.ToString().Length;
 
 int result = 0;
+int b = 1;
+
+// Решение задачи с помощью ветвления и цикла while
+// При запуске не работает цикл. Не могу понять почему.
 
 if (a < 3)
 {
@@ -17,19 +21,31 @@ if (a < 3)
 }
 else
 {
-    int b = 1;
-    int i = a;
-    while (i < 3)
-    {
-        b = b * 10;
-        i = i - 1;
-    }
-    result = n / b % 10;
-    System.Console.WriteLine(result);
+int i = a;
+while (i < 3)
+{
+     b = b * 10;
+     i = i - 1;
+}
+result = n / b % 10;
+System.Console.WriteLine(result);
 }
 
-// for (int i = a; i <= 3; i--)
-//     {
-//         b = b * 10;
-//     }
-//     result = n / b % 10;
+//Решение задачи с помощью цикла for
+//При запуске не работает цикл. Не могу понять почему.
+
+// for (int i = 0; i < a; i++)
+// {
+//     b = b * 10;
+// }
+// result = n / b * 1000 % 10;
+// System.Console.WriteLine(result);
+
+
+
+// Решение задачи через строковую переменную
+
+// System.Console.WriteLine("Введите число: ");
+// string? str = Console.ReadLine();
+// int  num = Convert.ToInt32(Convert.ToString(str![2]));
+// System.Console.WriteLine(num);
