@@ -10,15 +10,25 @@ int ReadInt(string text)
     return Convert.ToInt32(Console.ReadLine());
 }
 
+string[] array = {"Введите координату X точки A: ", 
+                  "Введите координату Y точки A: ", 
+                  "Введите координату Z точки A: ", 
+                  "Введите координату X точки B: ", 
+                  "Введите координату Y точки B: ", 
+                  "Введите координату Z точки B: "};
+
 int[] coordsA = new int [3];
-coordsA[0] = ReadInt("Введите координату X точки A: ");
-coordsA[1] = ReadInt("Введите координату Y точки A: ");
-coordsA[2] = ReadInt("Введите координату Z точки A: ");
+coordsA[0] = ReadInt(array[0]);
+coordsA[1] = ReadInt(array[1]);
+coordsA[2] = ReadInt(array[2]);
 
 int[] coordsB = new int [3];
-coordsB[0] = ReadInt("Введите координату X точки B: ");
-coordsB[1] = ReadInt("Введите координату Y точки B: ");
-coordsB[2] = ReadInt("Введите координату Z точки B: ");
+coordsB[0] = ReadInt(array[3]);
+coordsB[1] = ReadInt(array[4]);
+coordsB[2] = ReadInt(array[5]);
 
-double distance = Math.Sqrt(Math.Pow(coordsA[0] - coordsB[0], 2) + Math.Pow(coordsA[1] - coordsB[1], 2) + Math.Pow(coordsA[2] - coordsB[2], 2));
+double distance = Math.Sqrt(Math.Pow(coordsA[0] - coordsB[0], 2) 
+                          + Math.Pow(coordsA[1] - coordsB[1], 2) 
+                          + Math.Pow(coordsA[2] - coordsB[2], 2));
+                          
 System.Console.WriteLine(Math.Round(distance, 2));
