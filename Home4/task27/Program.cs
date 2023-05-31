@@ -5,25 +5,6 @@
 // 9012 -> 12
 
 
-// Решение через массив. Не понимаю, почему в основном коде не запускается цикл.
-// int SumArr(int[] Arr)
-// {
-//     int sum = 0;
-//     for (int i = 0; i < Arr.Length; i++)
-//     {
-//         sum = sum + Arr[i];
-//     }
-//     return sum;
-// }
-
-// System.Console.WriteLine("Введите число: ");
-// int[] A = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse);
-// int res = SumArr(A);
-// System.Console.WriteLine("Сумма цифр в числе составляет: " + res);
-
-
-// Решение через функции
-
 int ReadInt(string text)
 {
     System.Console.Write(text);
@@ -35,7 +16,7 @@ int SumN(int N)
     int sum = 0;
     while (N > 0)
     {
-        sum = sum + N % 10;
+        sum += N % 10;
         N = N / 10;
     }
     return sum;
