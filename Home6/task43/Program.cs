@@ -23,14 +23,7 @@ int ReadInt(string text)
 
 void IntersectionPoint(int[] arr, out double X, out double Y)
 {
-    if (arr[3] < arr[1] || arr[0] < arr[2])
-    {
-        X = (double)(arr[3] - arr[1]) / (arr[0] - arr[2]);
-    }
-    else
-    {
-        X = (double)(arr[3] - arr[1]) / (arr[0] - arr[2]);
-    }
+    X = (double)(arr[3] - arr[1]) / (arr[0] - arr[2]);
     Y = arr[0] * X + arr[1];
 }
 
